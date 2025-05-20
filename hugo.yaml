@@ -1,0 +1,122 @@
+baseURL: ""
+title: ansh anand
+pagination.paperSize: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: anshonweb
+  description: "Punpun was just fine again today."
+  keywords: [Blog, Portfolio, Linux, rv178, Idlidev]
+  images: ["https://files.catbox.moe/v8g6qq.ico"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark 
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    #disableHLJS: true # to disable highlight.js
+    #disableFingerprinting: true
+    favicon: "https://files.catbox.moe/v8g6qq.ico"
+    favicon16x16: "https://files.catbox.moe/v8g6qq.ico"
+    favicon32x32: "https://files.catbox.moe/v8g6qq.ico"
+    apple_touch_icon: "https://files.catbox.moe/v8g6qq.ico"
+    safari_pinned_tab: "https://files.catbox.moe/v8g6qq.ico"
+
+  label:
+    text: " "
+ 
+  # profile-mode
+  profileMode:
+    enabled: true 
+    subtitle: "Punpun was just fine again today."
+    imageUrl: "https://files.catbox.moe/4nu8hh.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: About Me
+        url: about
+
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/anshonweb"
+    - name: youtube
+      url: "https://www.youtube.com/@turnoffthefridge"
+    - name: lastfm
+      url: "https://www.last.fm/user/Kratos_31"
+    - name: letterboxd
+      url: "https://letterboxd.com/Kratos31/"
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  #editPost:
+  #Text: "Suggest Changes" # edit text
+  #appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
