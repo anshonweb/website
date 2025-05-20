@@ -3,9 +3,6 @@ builder = "DOCKERFILE"
 dockerfilePath = "Dockerfile"
 
 [deploy]
-numReplicas = 1
-healthcheckPath = "/"
-healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 
 [[ports]]
