@@ -16,9 +16,9 @@ params:
   env: production
   title: anshonweb
   description: "Punpun was just fine again today."
-  keywords: [Blog, Portfolio, Linux, rv178, Idlidev]
+  keywords: [Blog, Portfolio, Linux, anshonweb]
   images: ["https://files.catbox.moe/v8g6qq.ico"]
-  DateFormat: "January 2, 2006"
+  DateFormat: "December 31, 2005"
   defaultTheme: dark 
   disableThemeToggle: false
 
@@ -54,7 +54,7 @@ params:
   profileMode:
     enabled: true 
     subtitle: "Punpun was just fine again today."
-    imageUrl: "https://files.catbox.moe/4nu8hh.png"
+    imageUrl: "https://files.catbox.moe/epr0zz"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
